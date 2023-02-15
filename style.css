@@ -101,7 +101,7 @@ body {
     background-color: var(--2ndbackground);
     border-radius: 15px;
     width: 350px;
-    height: 596px;
+    /* height: 596px; */
     display: block;
     flex-direction: column;
     /* align-items: center; */
