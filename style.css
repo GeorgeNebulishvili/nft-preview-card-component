@@ -36,7 +36,10 @@ body {
     margin-bottom: 12px;
     margin-top: 24px;
 }
-
+.title:hover{
+    color: cyan;
+    cursor: pointer;
+}
 .description    {
     font-weight: 300;
     font-size: 18px;
@@ -65,13 +68,17 @@ body {
     line-height: 19px;
     color: var(--maintext);
 }
+.name:hover{
+    color: cyan;
+    cursor: pointer;
+}
 
-.icon-main   {
+/* .icon-main   {
     width: 28px;
     height: 27px;
     border-radius: 8px;
     display: flex;
-}
+} */
 
 .etherium   {
     display: flex;
@@ -111,17 +118,67 @@ body {
 .borderline {
     height: 1px;
     background-color: var(--borderline);
-    margin-top: 16px;
+    margin-top: 24px;
     margin-bottom: 23px;
 }
 
-.icon {
+.main-icon {
     border-radius: 8px;
     width: 302px;
     height: 302px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+   
+}
+.active-view {
+    width: 302px;
+    height: 302px;
+    background-color: #00FFF8;
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    border-radius: 8px; 
+}
+.active-view:hover {
+  width: 302px;
+  height: 302px;
+  background-color: hsl(178, 100%, 50%, 60%);
+  display: flex;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: 1;
+  border-radius: 8px; 
+  cursor: pointer;
+}
+
+/* parent div */
+.hover {
+    width: 302px;
+    height: 302px;
+    position: relative;
+}
+
+.active   {
+    transition: .5s ease;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-icon:hover {
+    background-color: cyan ;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 8px;
 }
 
 .author     {
@@ -134,6 +191,8 @@ body {
 .creation   {
     margin-right: 5px ;
 }
+
+
 
 
  @media (min-width: 768px) {
