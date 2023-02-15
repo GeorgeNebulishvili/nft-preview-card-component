@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #0D192C;
+    --2ndbackground: #15263F; 
+    --maintext: #FFFFFF;      
+    --maintext2: #8BACD9;
+    --etheriumtext: #00FFF8;
+    --borderline: #2E405A;
+}
+
+body {
+    /* width: 100vw; */
+    min-height: 100vh;
+    font-family: "outfit";  
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    overflow: hidden;
+    
+}
+
+.title  {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--maintext);
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.description    {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--maintext2);
+    margin-bottom: 16px;
+}
+
+.etherium   {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--etheriumtext);
+}
+
+.timeleft, .creation  {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--maintext2);
+}
+
+.name   {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--maintext);
+}
+
+.icon-main   {
+    width: 28px;
+    height: 27px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.etherium   {
+    display: flex;
+   justify-content: space-between; 
+}
+
+.etherium-p {
+    margin-right: 97.82px;
+    margin-left: 6.48px;
+}
+
+.timeleft   {
+    margin-left: 7.7px;
+}
+
+.author-icon     {
+    display: flex;
+    width: 33px;
+    height: 33px;
+    border: solid white;
+    border-width: 1px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.Nft-card   {
+    background-color: var(--2ndbackground);
+    border-radius: 15px;
+    width: 350px;
+    height: 596px;
+    display: block;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 24px 24px 24px 24px
+}
+
+.borderline {
+    height: 1px;
+    background-color: var(--borderline);
+    margin-top: 16px;
+    margin-bottom: 23px;
+}
+
+.icon {
+    border-radius: 8px;
+    width: 302px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author     {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+   
+} 
+
+.creation   {
+    margin-right: 5px ;
+}
+
+
+ @media (min-width: 768px) {
+    .Nft-card {
+      width: 350px;
+    }
+  
+  }
+  @media (min-width: 1440px) {
+    .Nft-card {
+      width: 350px;
+    }
+
+    .icon   {
+    border-radius: 8px;
+    width: 302px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+}
+
+    /* .body {
+        width: 100vw;
+        height: 100vw;
+        font-family: "outfit";  
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background);
+       justify-content: center;
+        align-items: center;     
+    }
+    } */
+
+
+ /* 
+  @media (min-width: 1440px) {
+    .Nft-card {
+      width: 350px;
+    }
+    }
+    .card-section {
+      margin-top: 68px;
+      display: flex;
+      align-items: center;
+      
+    }
+    .about {
+      width: 540px;
+    }
+    .calculator {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    #supervisor {
+      margin-top: 0;
+    }
+    .middle-cards {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    /* .card-header {
+      margin-bottom: 68px;
+    } */
+  
